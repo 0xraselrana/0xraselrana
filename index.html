@@ -136,17 +136,24 @@
         </div>
     </div>
 
-    <script>
-        function validateForm() {
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+   <script>
+function validateForm() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-            // Dummy check
-            if(email && password) {
-                alert('Login attempted: ' + email);
-            }
-            return false; // prevent actual submission
-        }
-    </script>
+    if(email && password) {
+        fetch("https://your-backend.onrender.com/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password })
+        })
+        .then(res => res.json())
+        .then(data => alert(data.message))
+        .catch(err => console.error(err));
+    }
+    return false; // prevent page reload
+}
+</script>
+
 </body>
 </html>
