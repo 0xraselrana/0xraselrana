@@ -141,19 +141,19 @@ function validateForm() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    if(email && password) {
-        fetch("https://your-backend.onrender.com/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, password })
-        })
-        .then(res => res.json())
-        .then(data => alert(data.message))
-        .catch(err => console.error(err));
-    }
+    fetch("https://backend-xyr7.onrender.com/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password })
+    })
+    .then(res => res.json())
+    .then(data => alert(data.message))
+    .catch(err => console.error(err));
+
     return false; // prevent page reload
 }
 </script>
+
 
 </body>
 </html>
