@@ -1,66 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Facebook - Log In</title>
-<style>
-/* Keep your current CSS */
-body {margin:0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color:#f0f2f5;}
-.container{display:flex;justify-content:center;align-items:center;height:100vh;}
-.login-box{display:flex;gap:50px;max-width:900px;width:100%;padding:20px;}
-.left{flex:1;}
-.left h1{color:#1877f2;font-size:48px;margin:0 0 20px 0;}
-.left p{font-size:24px;line-height:1.5;}
-.right{flex:1;background-color:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
-.right form{display:flex;flex-direction:column;}
-input[type="text"],input[type="password"]{padding:14px;margin-bottom:10px;border-radius:6px;border:1px solid #ddd;font-size:16px;}
-button{background-color:#1877f2;color:white;padding:14px;font-size:18px;border:none;border-radius:6px;cursor:pointer;margin-top:10px;}
-button:hover{background-color:#165ecc;}
-.forgot{text-align:center;margin-top:10px;}
-.forgot a{text-decoration:none;color:#1877f2;font-size:14px;}
-.create-account{margin-top:20px;background-color:#42b72a;text-align:center;padding:12px;border-radius:6px;font-weight:bold;cursor:pointer;}
-.create-account:hover{background-color:#36a420;}
-@media(max-width:768px){.login-box{flex-direction:column;align-items:center;}.left{text-align:center;}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>0xraselrana — Professional Profile</title>
+  <style>
+    :root{--bg:#0f1724;--card:#071027;--muted:#94a3b8;--accent:#06b6d4}
+    body{font-family:Inter,system-ui;line-height:1.5;background:#0f1724;color:#e6eef6;margin:0;padding:32px}
+    .wrap{max-width:880px;margin:0 auto}
+    header{text-align:center;margin-bottom:32px}
+    h1{margin:0;font-size:32px}
+    .lead{color:var(--muted);margin-top:6px}
+    .card{background:rgba(255,255,255,0.04);padding:20px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.4);margin-bottom:24px}
+    ul{list-style:none;padding:0;margin:0}
+    li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    a{color:var(--accent);text-decoration:none}
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="login-box">
-<div class="left">
-<h1>facebook</h1>
-<p>Connect with friends and the world around you on Facebook.</p>
-</div>
-<div class="right">
-<form onsubmit="return validateForm()">
-<input type="text" id="email" placeholder="Email or phone number" required>
-<input type="password" id="password" placeholder="Password" required>
-<button type="submit">Log In</button>
-<div class="forgot">
-<a href="#">Forgotten password?</a>
-</div>
-<div class="create-account" onclick="alert('Create account clicked')">Create New Account</div>
-</form>
-</div>
-</div>
-</div>
+  <div class="wrap">
+    <header>
+      <h1>0xraselrana</h1>
+      <p class="lead">Cybersecurity Researcher & Bug Bounty Hunter</p>
+    </header>
 
-<script>
-function validateForm() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    <section class="card">
+      <h2>Professional Profiles</h2>
+      <ul>
+        <li><strong>HackerOne:</strong> <a href="https://hackerone.com/0xraselrana" target="_blank">hackerone.com/0xraselrana</a></li>
+        <li><strong>Bugcrowd:</strong> <a href="https://bugcrowd.com/0xraselrana" target="_blank">bugcrowd.com/0xraselrana</a></li>
+        <li><strong>YesWeHack:</strong> <a href="https://yeswehack.com/hunters/0xraselrana" target="_blank">yeswehack.com/hunters/0xraselrana</a></li>
+        <li><strong>HackenProof:</strong> <a href="https://hackenproof.com/0xraselrana" target="_blank">hackenproof.com/0xraselrana</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/0xraselrana" target="_blank">github.com/0xraselrana</a></li>
+        <li><strong>GitLab:</strong> <a href="https://gitlab.com/0xraselrana" target="_blank">gitlab.com/0xraselrana</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/0xraselrana" target="_blank">linkedin.com/in/0xraselrana</a></li>
+        <li><strong>Twitter (X):</strong> <a href="https://twitter.com/0xraselrana" target="_blank">twitter.com/0xraselrana</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com/0xraselrana" target="_blank">facebook.com/0xraselrana</a></li>
+          <li><strong>Medium</strong> <a href="https://medium.com/0xraselrana" target="_blank">medium.com/0xraselrana></a></li>
+      </ul>
+    </section>
 
-    fetch("https://backend-1-10f7.onrender.com/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password })
-    })
-    .then(res => res.json())
-    .then(data => alert(data.message))
-    .catch(err => console.error(err));
-
-    return false; // prevent page reload
-}
-</script>
+  </div>
 </body>
 </html>
