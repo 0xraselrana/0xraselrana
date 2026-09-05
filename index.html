@@ -1,45 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>0xraselrana — Professional Profile</title>
-  <style>
-    :root{--bg:#0f1724;--card:#071027;--muted:#94a3b8;--accent:#06b6d4}
-    body{font-family:Inter,system-ui;line-height:1.5;background:#0f1724;color:#e6eef6;margin:0;padding:32px}
-    .wrap{max-width:880px;margin:0 auto}
-    header{text-align:center;margin-bottom:32px}
-    h1{margin:0;font-size:32px}
-    .lead{color:var(--muted);margin-top:6px}
-    .card{background:rgba(255,255,255,0.04);padding:20px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.4);margin-bottom:24px}
-    ul{list-style:none;padding:0;margin:0}
-    li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
-    a{color:var(--accent);text-decoration:none}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="0xRaselRana — Bug Bounty Hunter, Security Researcher and Web Application Security enthusiast.">
+  <meta name="theme-color" content="#070a0f">
+  <title>0xRaselRana — Security Researcher</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>0xraselrana</h1>
-      <p class="lead">Cybersecurity Researcher & Bug Bounty Hunter</p>
-    </header>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
 
-    <section class="card">
-      <h2>Professional Profiles</h2>
-      <ul>
-        <li><strong>HackerOne:</strong> <a href="https://hackerone.com/0xraselrana" target="_blank">hackerone.com/0xraselrana</a></li>
-        <li><strong>Bugcrowd:</strong> <a href="https://bugcrowd.com/0xraselrana" target="_blank">bugcrowd.com/0xraselrana</a></li>
-        <li><strong>YesWeHack:</strong> <a href="https://yeswehack.com/hunters/0xraselrana" target="_blank">yeswehack.com/hunters/0xraselrana</a></li>
-        <li><strong>HackenProof:</strong> <a href="https://hackenproof.com/0xraselrana" target="_blank">hackenproof.com/0xraselrana</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/0xraselrana" target="_blank">github.com/0xraselrana</a></li>
-        <li><strong>GitLab:</strong> <a href="https://gitlab.com/0xraselrana" target="_blank">gitlab.com/0xraselrana</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/0xraselrana" target="_blank">linkedin.com/in/0xraselrana</a></li>
-        <li><strong>Twitter (X):</strong> <a href="https://twitter.com/0xraselrana" target="_blank">twitter.com/0xraselrana</a></li>
-        <li><strong>Facebook:</strong> <a href="https://facebook.com/0xraselrana" target="_blank">facebook.com/0xraselrana</a></li>
-          <li><strong>Medium</strong> <a href="https://medium.com/0xraselrana" target="_blank">medium.com/0xraselrana></a></li>
-      </ul>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="0xRaselRana home">
+        <span class="brand-mark">&gt;_</span><span>0xRaselRana</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#writeups">Writeups</a>
+        <a href="#skills">Skills</a>
+        <a href="#connect">Connect</a>
+      </div>
+      <a class="nav-cta" href="mailto:0xraselrana@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="status"><span class="pulse"></span> AVAILABLE FOR SECURITY RESEARCH</div>
+        <p class="eyebrow">BUG BOUNTY HUNTER · SECURITY RESEARCHER</p>
+        <h1>Breaking things<br><span class="accent">responsibly.</span></h1>
+        <p class="hero-text">
+          I'm <strong>Rasel Rana</strong>, a bug bounty hunter focused on finding
+          vulnerabilities in web applications, APIs and modern web infrastructure.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://hackerone.com/0xraselrana" target="_blank" rel="noopener noreferrer">View HackerOne ↗</a>
+          <a class="btn ghost" href="#writeups">Read my research ↓</a>
+        </div>
+        <div class="mini-links">
+          <a href="https://github.com/0xraselrana" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://x.com/0xraselrana" target="_blank" rel="noopener noreferrer">X</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/0xraselrana/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="https://medium.com/@0xraselrana" target="_blank" rel="noopener noreferrer">Medium</a>
+        </div>
+      </div>
+
+      <div class="terminal-card reveal">
+        <div class="terminal-top">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <span>researcher@0xraselrana:~</span>
+          <span class="terminal-lock">●</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="terminal-value">0xraselrana</p>
+          <p><span class="prompt">$</span> cat focus.txt</p>
+          <p class="terminal-value">Web Security · API Security<br>Recon · Cloud Security</p>
+          <p><span class="prompt">$</span> status</p>
+          <p><span class="ok">● ONLINE</span> <span class="muted">/ hunting for bugs</span></p>
+          <p><span class="prompt">$</span> <span class="cursor"></span></p>
+        </div>
+      </div>
     </section>
 
-  </div>
+    <section class="stats container reveal" aria-label="Profile highlights">
+      <div><span>01</span><strong>Security</strong><small>Research</small></div>
+      <div><span>02</span><strong>Bug Bounty</strong><small>Programs</small></div>
+      <div><span>03</span><strong>Web / API</strong><small>Focus</small></div>
+      <div><span>04</span><strong>Responsible</strong><small>Disclosure</small></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 — ABOUT</p>
+        <h2>Security is a mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I’m <strong>Rasel Rana</strong> (<code>0xraselrana</code>), a security researcher
+            and bug bounty hunter. My work revolves around discovering and responsibly
+            reporting security vulnerabilities that can affect real users and systems.
+          </p>
+          <p>
+            I enjoy the full research process — from attack-surface discovery and
+            reconnaissance to manual testing, exploitation and clear vulnerability
+            reporting.
+          </p>
+        </div>
+        <div class="quote-card reveal">
+          <span class="quote-mark">“</span>
+          <p>Find the edge case.<br>Understand the impact.<br>Report it responsibly.</p>
+          <span class="quote-author">— 0xRaselRana</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="platforms">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — BUG BOUNTY</p>
+          <h2>Find me on the platforms.</h2>
+          <p class="section-sub">Follow my public researcher profiles and security activity.</p>
+        </div>
+        <div class="platform-grid">
+          <a class="platform-card reveal" href="https://hackerone.com/0xraselrana" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">H1</div><div><h3>HackerOne</h3><p>0xraselrana</p></div><span>↗</span>
+          </a>
+          <a class="platform-card reveal" href="https://bugcrowd.com/h/0xraselrana" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">BC</div><div><h3>Bugcrowd</h3><p>0xraselrana</p></div><span>↗</span>
+          </a>
+          <a class="platform-card reveal" href="https://hackenproof.com/hackers/0xraselrana" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">HP</div><div><h3>HackenProof</h3><p>0xraselrana</p></div><span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="writeups">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — RESEARCH</p>
+        <h2>Writeups & findings.</h2>
+        <p class="section-sub">Technical notes, vulnerability research and lessons learned.</p>
+      </div>
+      <a class="writeup-card reveal" href="https://medium.com/@0xraselrana/from-probably-a-false-positive-to-a-bounty-how-i-exploited-an-overlooked-api-c35ea37105e9" target="_blank" rel="noopener noreferrer">
+        <div class="writeup-number">01</div>
+        <div class="writeup-main">
+          <p class="tag">MEDIUM · FEATURED WRITEUP</p>
+          <h3>From Probably a False Positive to a Bounty</h3>
+          <p>How I exploited an overlooked API.</p>
+        </div>
+        <span class="writeup-arrow">↗</span>
+      </a>
+      <div class="more-research reveal">
+        <span>More research on</span>
+        <a href="https://medium.com/@0xraselrana" target="_blank" rel="noopener noreferrer">Medium ↗</a>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 — TOOLKIT</p>
+          <h2>Tools of the trade.</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-group"><span>RECON</span><p>Subfinder · Amass · Assetfinder · Findomain · Knockpy · Shuffledns · DNSx · httpx</p></div>
+          <div class="skill-group"><span>WEB SECURITY</span><p>Burp Suite · Nuclei · FFUF · API Testing · Authentication · Access Control</p></div>
+          <div class="skill-group"><span>RESEARCH</span><p>Attack Surface Mapping · Manual Testing · Vulnerability Validation · Responsible Disclosure</p></div>
+          <div class="skill-group"><span>ENVIRONMENT</span><p>Linux · Git · GitHub · Bash · Cloud Infrastructure</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="connect">
+      <div class="connect-box reveal">
+        <div>
+          <p class="eyebrow">05 — CONNECT</p>
+          <h2>Let's talk security.</h2>
+          <p>Have a research collaboration, security opportunity or just want to connect?</p>
+        </div>
+        <a class="btn primary" href="mailto:0xraselrana@gmail.com">0xraselrana@gmail.com ↗</a>
+      </div>
+
+      <div class="social-grid reveal">
+        <a href="https://github.com/0xraselrana" target="_blank" rel="noopener noreferrer"><span>GitHub</span><small>@0xraselrana</small><b>↗</b></a>
+        <a href="https://x.com/0xraselrana" target="_blank" rel="noopener noreferrer"><span>X / Twitter</span><small>@0xraselrana</small><b>↗</b></a>
+        <a href="https://www.linkedin.com/in/0xraselrana/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>/in/0xraselrana</small><b>↗</b></a>
+        <a href="https://facebook.com/0xraselrana" target="_blank" rel="noopener noreferrer"><span>Facebook</span><small>@0xraselrana</small><b>↗</b></a>
+        <a href="https://medium.com/@0xraselrana" target="_blank" rel="noopener noreferrer"><span>Medium</span><small>@0xraselrana</small><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div><span class="brand-mark">&gt;_</span> 0xRaselRana</div>
+    <p>© <span id="year"></span> Rasel Rana. Built for security research.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
