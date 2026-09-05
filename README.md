@@ -1,4 +1,4 @@
-# 0xRaselRana Portfolio
+# 0xraselrana Portfolio
 
 Static portfolio for GitHub Pages.
 
