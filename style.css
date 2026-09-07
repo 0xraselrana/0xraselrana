@@ -69,3 +69,30 @@ h1{font-size:clamp(50px,7vw,92px);line-height:.98;letter-spacing:-.065em;font-we
 @media(max-width:520px){
   .container{width:min(calc(100% - 28px),var(--max))}.hero{min-height:auto;padding:55px 0 65px}.hero-text{font-size:15px}.terminal-body{padding:23px 19px;font-size:12px}.section{padding:85px 0}.writeup-card{grid-template-columns:35px 1fr;padding:22px 18px}.writeup-arrow{display:none}.skills-grid{grid-template-columns:1fr}.skill-group:nth-child(odd){border-right:0}.social-grid{grid-template-columns:1fr}.connect-box{padding:28px}.connect-box h2{font-size:33px}.stats>div{padding:18px 15px}.stats strong{font-size:13px}
 }
+.whatsapp-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+
+    font-size: 25px;
+    text-decoration: none;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
+    z-index: 9999;
+
+    transition: .2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.05);
+}
