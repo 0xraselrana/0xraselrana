@@ -77,22 +77,36 @@ h1{font-size:clamp(50px,7vw,92px);line-height:.98;letter-spacing:-.065em;font-we
     width: 58px;
     height: 58px;
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 50%;
     background: #25D366;
-    color: white;
+    color: #fff;
 
     font-size: 25px;
     text-decoration: none;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
     z-index: 9999;
 
-    transition: .2s ease;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
 }
 
 .whatsapp-float:hover {
     transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.35);
+}
+
+@media (max-width: 520px) {
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        width: 54px;
+        height: 54px;
+        font-size: 23px;
+    }
 }
